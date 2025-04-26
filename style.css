@@ -1,0 +1,435 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #252525;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: #1D1D1D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 30px;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  opacity: 1;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: cyan;
+  transition: 0.3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+section {
+  padding: 7em 10% 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10em 0em;
+}
+
+#home {
+  text-align: center;
+  color: white;
+}
+
+#home img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.home-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 1em;
+}
+
+.home-info h1 {
+  font-size: 5em;
+  font-weight: 500;
+}
+
+.home-info h3 {
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+.about-box {
+  background-color: white;
+  border-radius: 2em;
+  padding: 2em;
+  margin-top: 2em;
+  width: 100%;
+  max-width: 800px;
+}
+#about-me p{
+  text-indent: 1em;
+}
+#about-me{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  text-align: center;
+}
+
+.about-box h1 {
+  font-size: 2em;
+  color: black;
+}
+
+.about-box p {
+  color: black;
+  font-size: 1em;
+  text-align: justify;
+}
+
+.skill, .hobbie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  color: black;
+  background-color: #EDEDED;
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0 0 10px #696969;
+}
+
+.skill li, .hobbie li {
+  text-align: center;
+  list-style: none;
+}
+
+#Skills, #Hobbies {
+  text-align: center;
+  margin-bottom: 0.5em;
+  color: black;
+}
+#skills-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+#about {
+  padding: 5em 10% 5em;
+}
+
+.bio-box {
+  background-color: white;
+  border-radius: 2em;
+  padding: 2em;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: flex-start; 
+  gap: 2em;
+}
+
+.bio-box video {
+  position: relative;
+  float: left;
+  display: block;
+  width: 250px;
+  min-width: 150px;
+  margin: 0em 2em 2em 0em;
+  border-radius: 1em;
+  box-shadow: 1em 1em 20px #9E9E9E;
+}
+
+#bio {
+  flex: 1;
+}
+
+#bio h1 {
+  text-align: center;
+  color: black;
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+#bio h3{
+  text-align: center;
+  color: black;
+  margin-top: 2em;
+  font-size: 1.5em;
+}
+
+#bio p {
+  font-size: 1em;
+  text-indent: 1em;
+  color: black;
+  text-align: justify;
+}
+
+#bio ul{
+  list-style-type: none;
+}
+
+#bio ul li{
+  margin: 0.5em;
+}
+#contact {
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+  padding: 5em 10% 5em;
+}
+#contact p{
+  font-size: 1em;
+  color: red;
+}
+.contact-header {
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+form .input-box {
+  width: 100%;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 1em;
+  font-size: 1em;
+  border-radius: 0.5em;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.2s ease-in-out;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: 2px solid cyan;
+  outline-offset: 2px;
+  background-color: #fff;
+}
+
+form textarea {
+  min-height: 200px;
+}
+
+.btn {
+  border: 2px solid white;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 0.5em;
+  font-size: 1em;
+  padding: 0.5em 0.3em;
+  width: 30%;
+  margin-left: 8.5em;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #252525;
+}
+#mail {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 0.5em;
+  margin: 10em auto 0 auto;
+  padding: 2em;
+  width: fit-content;
+  background: #1D1D1D;
+  border-radius: 1em;
+}
+
+
+#mail img {
+  width: 50px;
+  height: auto;
+  align-self: flex-start;
+  background-color: white;
+  border-radius: 0.5em;
+}
+
+#mail a {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  color: white;
+  text-decoration-line: bottom;
+  margin-bottom: 0.5em;
+}
+
+footer {
+  padding: 2em 0;
+  text-align: center;
+  color: white;
+  background: #1D1D1D;
+}
+footer img {
+  width: 100px;
+  padding: 1em;
+}
+
+
+@media (max-width: 768px) {
+.home-info h1{
+    font-size: 2.5em;
+  }
+  
+  .home-info h3{
+    font-size: 0.9em;
+  }
+  
+#about-me p, .skill, .hobbie{
+  font-size: 0.8em;
+}
+  
+.bio-box {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  }
+
+.bio-box video {
+  margin: 0 auto 1em;
+  width: 10vw;
+  max-width: 200px;
+  }
+
+#bio {
+  flex: none;
+  width: 100%;
+  margin-top: 0;
+  }
+#bio h1{
+    font-size: 1.5em;
+  }
+  
+#bio h3{
+    font-size: 1em;
+  }
+  
+#bio p {
+  font-size: 0.8em;
+  text-indent: 1em;
+  color: black;
+  text-align: justify;
+}
+#bio ul{
+  font-size: 0.7em;
+  text-align: left;
+}
+#contact p{
+  font-size: 0.7em;
+}
+  
+form {
+  padding: 0.5em 1em;
+  margin: 0.5em auto;
+  width: 90%;
+  max-width: 350px;
+}
+
+form {
+  gap: 0.5em;
+ }
+
+ form input, form textarea, .btn{
+  padding: 10px 10px 10px 10px;
+  font-size: 0.5em;
+}
+  
+.btn {
+  width: 50%;
+  padding: 0.5em 0.5em;
+  margin-left: 5em;
+  max-width: 200px;
+  justify-content: center;
+  }
+  
+.navbar a{ 
+  font-size: 15px;
+}
+
+.logo{
+  font-size: 20px;
+}
+
+#mail {
+  margin: 10em 0em 0em 0em;
+  height: 1em;
+  font-size: 0.6em;
+  padding: 4em;
+}
+
+#mail img{
+  width: 12%;
+}
+footer img{
+  width: 60px;
+  padding: 0.5em;
+}
+}
