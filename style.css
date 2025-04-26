@@ -334,7 +334,7 @@ form textarea {
 }
 
 footer {
-  padding: 1.5em 0;
+  padding: 1em 0;
   text-align: center;
   color: white;
   background: #1D1D1D;
@@ -444,6 +444,7 @@ footer img{
   width: 60px;
   padding: 0.5em;
 }
-  #bckground-video{
-    display: none;
+#bckground-video{
+  display: none;
+}
 }
