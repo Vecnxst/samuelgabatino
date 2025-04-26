@@ -311,7 +311,7 @@ form textarea {
   margin: 10em auto 0 auto;
   padding: 2em;
   width: fit-content;
-  background: #1D1D1D;
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 1em;
 }
 
